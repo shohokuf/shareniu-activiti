@@ -8,7 +8,7 @@ import redis.clients.jedis.Jedis;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.shareniu.activiti.learing.ch14.infoache.MyProcessDefinitionInfoCache;
+//import com.shareniu.activiti.learing.ch14.infoache.MyProcessDefinitionInfoCache;
 import com.shareniu.chapter8.ShareniuProcessDefinitionInfoCache.ProcessDefinitionInfoCacheObjectVo;
 /**
  *  Activiti权威指南书配套代码
@@ -32,7 +32,7 @@ public class JedisTest {
 		
 		//添加到redis中 key一定要与自定义缓存类中的get函数key一直
 		*/
-		jedis.set(key.getBytes(), MyProcessDefinitionInfoCache.toByteArray(v));
+//		jedis.set(key.getBytes(), MyProcessDefinitionInfoCache.toByteArray(v));
 		get(jedis, key);
 	}
 
