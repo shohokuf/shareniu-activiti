@@ -16,19 +16,20 @@ import org.xml.sax.SAXException;
 public class ShareniuBpmnXMLConverter extends BpmnXMLConverter {
 	  protected static   String BPMN_XSD = "com/shareniu/chapter3/BPMN20.xsd";
 	  protected Schema createSchema() throws SAXException {
-		    SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-		    Schema schema = null;
-		    if (classloader != null) {
-		      schema = factory.newSchema(classloader.getResource(BPMN_XSD));
-		    }
-		    
-		    if (schema == null) {
-		      schema = factory.newSchema(BpmnXMLConverter.class.getClassLoader().getResource(BPMN_XSD));
-		    }
-		    
-		    if (schema == null) {
-		      throw new XMLException("BPMN XSD could not be found");
-		    }
-		    return schema;
+//		    SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+//		    Schema schema = null;
+//		    if (classloader != null) {
+//		      schema = factory.newSchema(classloader.getResource(BPMN_XSD));
+//		    }
+//		    
+//		    if (schema == null) {
+//		      schema = factory.newSchema(BpmnXMLConverter.class.getClassLoader().getResource(BPMN_XSD));
+//		    }
+//		    
+//		    if (schema == null) {
+//		      throw new XMLException("BPMN XSD could not be found");
+//		    }
+//		    return schema;
+		  return null;
 		  }
 }
